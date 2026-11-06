@@ -1,14 +1,13 @@
 # ==============================================================================
 # Render Blueprint Configuration (render.yaml)
-# Deploy Full-Stack Quiz Proctor System to Render with 1-Click
 # ==============================================================================
 
 services:
   - type: web
     name: quiz-proctor
-    runtime: node
+    env: node
     plan: free
-    region: singapore
+    region: oregon
     buildCommand: npm run build
     startCommand: npm start
     envVars:
